@@ -11,7 +11,7 @@ public class Main2609 {
 		System.out.println(gcd(A,B));
 		System.out.println(lcm(A,B));
 	}
-	
+	// 최대공약수를 구하는 메서드
 	public static int gcd(int a, int b) {
 		int result = 1;
 		for(int i = 1 ; i <= Math.min(a, b) ;i++) {
@@ -21,6 +21,7 @@ public class Main2609 {
 		}
 		return result;
 	}
+	// 최소공배수를 구하는 메서드
 	public static int lcm(int a, int b) {
 		return a*b/gcd(a,b);
 	}
