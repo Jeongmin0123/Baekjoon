@@ -36,8 +36,7 @@ public class Main1722 {
 			for(int j = 1 ; j <= n ; j++) {
 				// 만약 j가 사용된 숫자면 다음 숫자로 넘어간다.
 				if(used[j]) continue;
-				// a 가 fib[n-1-i]보다 큰 경우 이 값을 계속 뺌과 동시에
-				// 배열의 i번째 숫자에 들어갈 숫자를 하나씩 증가시켜준다.
+				// a 가 fib[n-1-i]보다 큰 경우 이 값을 계속 빼서 a를 작게 만들어준다.
 				if(fib[n-1-i] < a) {
 					a -= fib[n-1-i]; 
 				} else {
