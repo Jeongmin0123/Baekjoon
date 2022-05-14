@@ -15,6 +15,7 @@ public class Main10814 {
 			arr[i][1] = sc.next();
 		}
 		
+		// 나이로 정렬한 후에 나이가 같으면 이름 순으로 정렬한다.
 		Arrays.sort(arr, new Comparator<String[]>() {
 			@Override
 			public int compare(String[] s1, String[] s2) {
