@@ -24,6 +24,7 @@ public class Main10814 {
 			
 		});
 		
+		// Ãâ·Â
 		for(int i = 0; i < N; i++) {
 			System.out.println(arr[i][0] + " " + arr[i][1]);
 		}
