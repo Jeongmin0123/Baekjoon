@@ -4,37 +4,36 @@ import java.util.Scanner;
 
 public class Main2581 {
 
+	public static boolean[] prime = new boolean[10001];
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int M = sc.nextInt();
 		int N = sc.nextInt();
+		prime_check();
 		int sum = 0;
-		int min = 0;
+		int min = 20000;
 		for(int i = M ; i <= N ; i++) {
-			int temp_min = 0;
-			for(int j = 2 ; j <= Math.sqrt(i) ; j++) {
-				if(i%j != 0) {
-					temp_min = i;
-				} else {
-					temp_min = 0;
-					break;
-				}
-			}
-			
-			sum += temp_min;
-			if(min == 0 && temp_min != 0) {
-				min = temp_min;
-			} else if(min > temp_min && temp_min != 0) {
-				min = temp_min;
+			if(!prime[i]) {
+				sum += i;
+				min = Math.min(i, min);
 			}
 		}
-		if(min != 0) {
+		if(min == 20000) {
+			System.out.println(-1);
+		} else {
 			System.out.println(sum);
 			System.out.println(min);
-		} else {
-			System.out.println(-1);
 		}
-		
-		sc.close();
+	}
+	public static void prime_check() {
+		prime[0] = true;
+		prime[1] = true;
+		for(int i=2; i*i<=10000; i++){
+            if(!prime[i]){
+            	for(int j=i*i; j<=10000; j+=i) {
+            		prime[j] = true;                
+            	}
+            }        
+        } 
 	}
 }
