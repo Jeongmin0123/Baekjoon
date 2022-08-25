@@ -79,6 +79,7 @@ public class Main1922 {
 				sum += network[i].value;
 			}
 		}
+		
 		System.out.println(sum);
 	}
 }
