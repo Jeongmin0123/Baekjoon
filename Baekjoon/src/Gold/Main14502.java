@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main14503 {
+public class Main14502 {
 
 	public static int[][] dxdy = { { 1, 0 }, { 0, 1 }, { -1, 0 }, { 0, -1 } };
 	public static int M, N;
