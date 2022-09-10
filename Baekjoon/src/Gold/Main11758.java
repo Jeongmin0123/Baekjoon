@@ -26,6 +26,7 @@ public class Main11758 {
 	// 신발끈 공식을 이용하여 반시계 방향인지, 시계 방향인지 반환해주는 메서드
 	public static int CCW() {
 		int result = x1*y2 + x2*y3 + x3*y1 - x2*y1 - x3*y2 - x1*y3;
+		
 		if(result > 0) {
 			return 1;
 		} else if(result < 0) {
