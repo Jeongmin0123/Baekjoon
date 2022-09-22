@@ -28,14 +28,13 @@ public class Main2467 {
 			if(Math.min(Math.abs(temp), sum) == Math.abs(temp)) {
 				location[0] = left;
 				location[1] = right;
+				sum = Math.min(Math.abs(temp), sum);
 			}
 			// 특성값이 0보다 크면 산성 용액의 값을 줄이고 특성값의 최소값을 재지정한다.
 			if(temp > 0) {
-				sum = Math.min(Math.abs(temp), sum);
 				right--;
 				// 특성값이 0보다 작으면 산성 용액의 값을 줄이고 특성값의 최소값을 재지정한다.
 			} else if(temp < 0) {
-				sum = Math.min(Math.abs(temp), sum);
 				left++;
 			// 특성값이 0이면 두 용액의 위치를 저장하고 연산을 종료한다.
 			} else {
