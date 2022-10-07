@@ -50,7 +50,6 @@ public class Main16234 {
 			}
 		}
 	}
-	
 	public static void bfs(int r, int c) {
 		Queue<int[]> q = new ArrayDeque<>();
 		visited[r][c] = true;
