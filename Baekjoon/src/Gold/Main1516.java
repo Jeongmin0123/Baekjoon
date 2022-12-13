@@ -46,7 +46,6 @@ public class Main1516 {
 		}
 		System.out.println(sb);
 	}
-
 	public static void calc() {
 		Queue<Integer> q = new ArrayDeque<>();
 		for (int i = 0; i < N; i++) {
